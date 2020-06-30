@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/57585625/springcloud_config_manage.git
+          username: 6236353585@qq.com
+          password: zy57585625
+
+server:
+  port: 9003
+
+eureka:
+  client:
+    serviceUrl:
+      #在注册中心中进行注册
+      defaultZone: http://localhost:8001/eureka/
+
